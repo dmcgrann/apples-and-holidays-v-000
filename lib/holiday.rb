@@ -45,11 +45,9 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-  holiday_hash.each do |season, holiday_name|
-    holiday_name.each do |k,v|
-      v.merge({:k => "v"})
-    end
-  end
+  holiday_hash = Proc.new do |hash, key|
+    hash[key] = Hash.new(&holiday_hash).merge([:season][holiday_name] => "supply_array")
+end
   holiday_hash
 end
 
