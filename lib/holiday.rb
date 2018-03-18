@@ -54,7 +54,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |k, hash|
     hash = holiday_hash.values.flatten
     hash.to_s
-    hash.split.capitalize!
+    hash.split("").capitalize!
     hash.join(", ")
   end
   hash
