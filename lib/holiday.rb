@@ -65,6 +65,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holiday|
     holiday.each do |holiday, x|
       x.select {|i| i == "BBQ"}
+      return "#{holiday}"
     end
   end
 end
