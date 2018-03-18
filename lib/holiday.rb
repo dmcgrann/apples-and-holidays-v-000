@@ -66,7 +66,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.each do |holiday, x|
       if x.all? {|i| i == "BBQ"}
         holiday
-    end
+      end
     end
   end
 end
