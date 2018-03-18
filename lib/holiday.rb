@@ -45,13 +45,12 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-  h2 = {}
   holiday_hash.each do |season, holiday_name|
     holiday_name.each do |k,v|
-      h2.merge({:k => "v"})
+      season.merge({:k => "v"})
     end
   end
-  h2
+  holiday_hash
 end
 
 def all_winter_holiday_supplies(holiday_hash)
