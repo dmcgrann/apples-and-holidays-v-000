@@ -51,7 +51,7 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  holiday_hash.each do |k, v|
+  holiday_hash.each do |k, hash|
     hash = holiday_hash.values.flatten
     hash.to_s.capitalize
     hash.join(", ")
