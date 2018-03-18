@@ -53,7 +53,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   hash = []
   hash = holiday_hash.values.flatten
-  hash.split("").capitalize
+  hash.to_s.capitalize
   hash.join(", ")
   hash
 end
